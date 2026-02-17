@@ -4,7 +4,7 @@ metadata:
   name: unifi-os-server-pvc
   namespace: unifi
 spec:
-  storageClassName: longhorn
+  storageClassName: harvester
   accessModes:
     - ReadWriteOnce  
   resources:
