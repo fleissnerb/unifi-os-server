@@ -12,7 +12,7 @@ spec:
     - "unifi.example.com"
     secretName: tls-secret
   rules:
-  - host: unifi.example.com
+  - host: unifi.crust.life
     http:
       paths:
       - path: /
