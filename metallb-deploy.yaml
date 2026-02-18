@@ -5,5 +5,5 @@ metadata:
   namespace: kube-system
 spec:
   chart: metallb
-  repo: https://metallb.github.io
+  repo: https://metallb.github.io/metallb
   targetNamespace: metallb-system
