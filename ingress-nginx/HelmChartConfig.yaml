@@ -5,6 +5,8 @@ metadata:
   namespace: kube-system
 spec:
   valuesContent: |-
+    strategy:
+      type: Recreate
     controller:
       hostNetwork: false
       kind: Deployment
