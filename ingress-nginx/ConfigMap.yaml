@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ingress-nginx-tcp
+  namespace: kube-system
+data:
+  "5005": "unifi/unifi-os-server-rtp-svc:5005"
+  "9543": "unifi/unifi-os-server-id-hub-svc:9543"
+  "6789": "unifi/unifi-os-server-mobile-speedtest-svc:6789"
+  "8080": "unifi/unifi-os-server-communication-svc:8080"
+  "8443": "unifi/unifi-os-server-network-app-svc:8443"
+  "8444": "unifi/unifi-os-server-hotspot-secured-svc:8444"
+  "11084": "unifi/unifi-os-server-site-supervisor-svc:11084"
+  "5671": "unifi/unifi-os-server-aqmps-svc:5671"
+  "8880": "unifi/unifi-os-server-hotspot-redirect-0-svc:8880"
+  "8881": "unifi/unifi-os-server-hotspot-redirect-1-svc:8881"
+  "8882": "unifi/unifi-os-server-hotspot-redirect-2-svc:8882"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ingress-nginx-udp
+  namespace: kube-system
+data:
+  "3478": "unifi/unifi-os-server-stun-svc:3478"
+  "5514": "unifi/unifi-os-server-syslog-svc:5514"
+  "10003": "unifi/unifi-os-server-discovery-svc:10003"
