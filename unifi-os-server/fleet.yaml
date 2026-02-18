@@ -3,7 +3,6 @@ metadata:
   name: unifi-os-server
   namespace: fleet-default
 spec:
-  path: unifi-os-server/unifi-os-server
   helm:
     releaseName: unifi-os-server
     version: 1.0.0
