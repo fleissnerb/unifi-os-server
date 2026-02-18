@@ -6,7 +6,12 @@ metadata:
 spec:
   valuesContent: |-
     controller:
+      hostNetwork: false
+      kind: Deployment
+      replicaCount: 1
       service:
+        enabled: true
+        type: LoadBalancer
         extraPorts:
           - name: "unifi-os-server-rtp-svc"
             port: 5005
