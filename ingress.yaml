@@ -9,7 +9,7 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - "unifi.example.com"
+    - "unifi.crust.life"
     secretName: tls-secret
   rules:
   - host: unifi.crust.life
