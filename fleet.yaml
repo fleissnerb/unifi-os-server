@@ -1,7 +1,0 @@
-kind: Bundle
-metadata:
-  name: unifi-os-server
-  namespace: fleet-default
-helm:
-  releaseName: unifi-os
-  version: 1.0.0
