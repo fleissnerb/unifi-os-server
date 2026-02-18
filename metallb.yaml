@@ -1,3 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: metallb-system
+spec:
+  finalizers:
+    - kubernetes
+---
 apiVersion: helm.cattle.io/v1
 kind: HelmChart
 metadata:
@@ -7,7 +15,6 @@ spec:
   chart: metallb
   repo: https://metallb.github.io
   targetNamespace: metallb-system
-  createNamespace: true
 ---
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
